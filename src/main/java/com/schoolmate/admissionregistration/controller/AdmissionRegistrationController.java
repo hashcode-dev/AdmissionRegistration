@@ -12,5 +12,4 @@ public class AdmissionRegistrationController {
     public String getHealthStatus(){
         return "Statis Ok";
     }
-
 }
