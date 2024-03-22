@@ -11,6 +11,5 @@ public class AdmissionRegistrationController {
     @GetMapping("/healthCheck")
     public String getHealthStatus(){
         return "Statis Ok";
-
     }
 }
