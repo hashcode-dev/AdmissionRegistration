@@ -1,21 +1,29 @@
 package com.schoolmate.admissionregistration.model;
 
 import lombok.*;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.util.Date;
+import java.util.List;
 
 @Getter
 @Setter
 @AllArgsConstructor
 @Builder
+@Document("admission_registration")
 public class AdmissionRegistrationDetails {
-    private Integer registrationId;
+    @Id
+    private Long id;
+    private Long registrationId;
     private String studentFirstName;
     private String studentMidName;
     private String studentLastName;
     private String gender;
     private String category;
     private Date dateOfBirth;
-    private Address address;
-    private ContactDetails contactDetails;
+    private Date dateOfRegistration;
+    private Integer candidateAge;
+    private Address communicationAddress;
+    private List<GuardianDetails> guardianDetailsList;
 }

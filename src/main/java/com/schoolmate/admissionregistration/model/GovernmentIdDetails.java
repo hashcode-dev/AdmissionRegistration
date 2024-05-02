@@ -9,9 +9,8 @@ import lombok.Setter;
 @Setter
 @AllArgsConstructor
 @Builder
-public class ContactDetails {
-    private String primaryContact;
-    private String secondaryContact;
-    private String email;
-    private Boolean primaryContactOnWA;
+public class GovernmentIdDetails {
+    private String govIdType;
+    private String govIdNumber;
+    private boolean govIdVerified;
 }
