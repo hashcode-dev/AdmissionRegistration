@@ -17,7 +17,6 @@ import java.util.List;
 @Document("admission_registration")
 public class AdmissionRegistrationDetails {
     @Id
-    private Long id;
     private Long registrationId;
     private String studentFirstName;
     private String studentMidName;

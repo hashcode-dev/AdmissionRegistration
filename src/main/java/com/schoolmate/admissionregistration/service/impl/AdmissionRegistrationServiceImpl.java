@@ -33,7 +33,6 @@ public class AdmissionRegistrationServiceImpl implements AdmissionRegistrationSe
         try{
             admissionRegistrationDetailsList.forEach(admissionRegistrationDetails -> {
                 Long admissionRegistrationId = getSequenceGeneratorService().generateSequence(ApplicationConstants.REGISTRATION_SEQUENCE);
-                admissionRegistrationDetails.setId(admissionRegistrationId);
                 admissionRegistrationDetails.setRegistrationId(admissionRegistrationId);
                 admissionRegistrationDetails.setDateOfRegistration(new Date());
                 admissionRegistrationDetails.setCandidateAge(Utility.ageCalculator(admissionRegistrationDetails.getDateOfBirth()));
